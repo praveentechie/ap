@@ -1,0 +1,12 @@
+@import '../styles/core.scss';
+
+.card {
+  text-align: center;
+
+  .avatar {
+    border-radius: 50%;
+    border: 5px solid $border-gray;
+    height: 350px;
+    width: 350px;
+  }
+}

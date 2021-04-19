@@ -1,0 +1,50 @@
+@import '../styles/core.scss';
+
+.skill {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .skill-type {
+    background-color: $background-light;
+    border-radius: 5px 35px 5px;
+    box-shadow: 0px 0px 10px #adadad;
+    margin: 30px;
+    padding: 10px 20px 20px 20px;
+    padding-bottom: 30px;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      box-shadow: 0px 0px 30px #adadad;
+    }
+  }
+
+  .skill-type-title {
+    border-bottom: 1px solid $border-gray-dark;
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-top: 0;
+    padding: 10px 15px;
+  }
+
+  .skill-item-container {
+    display: grid;
+    grid-template-columns: calc(100%/6) calc(100%/6) calc(100%/6) calc(100%/6) calc(100%/6) calc(100%/6);
+
+    .skill-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  
+      .skill-item-image {
+        height: 100px;
+        width: 100px;
+      }
+  
+      .skill-item-text {
+        
+      }
+    }  
+  }
+}

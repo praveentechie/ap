@@ -1,0 +1,76 @@
+@import './styles/core.scss';
+
+.app {
+
+  .page-container {
+    display: flex;
+
+    .nav-bar {
+      .side-nav {
+        background-color: $background;
+        list-style: none;
+        margin-top: 0;
+        height: 100%; /* Full-height: remove this if you want "auto" height */
+        width: 190px; /* Set the width of the sidebar */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding: 0;
+
+        .brand-info {
+          padding: 0 0 0 15px;
+          min-height: 120px;
+          border-bottom: 1px solid $border-gray-dark;
+
+          .brand-name {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+          }
+
+          .brand-sub-title {
+            margin: 0;
+          }
+        }
+
+        .nav-menu {
+          padding: 8px 15px 8px 15px;
+
+          .nav-menu-icon {
+            font-size: 1.2rem;
+            margin-right: 15px;
+            text-align: center;
+            width: 20px;
+          }
+
+          .nav-menu-text {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+    .main {
+      margin-left: 190px;
+      width: 100%;
+    }
+  }
+
+  .section {
+    padding-bottom: 2rem;
+
+    &.home {
+      height: 100vh;
+    }
+
+    header .page-header {
+      color: $font-color-light;
+      font-size: 2rem;
+      font-weight: 200;
+      margin: 0;
+      padding: 15px;
+      background-color: teal;
+      width: 100%;
+    }
+  }
+}
