@@ -1,0 +1,35 @@
+.contact {
+  .logo-wrapper {
+    margin: 25px auto;
+    width: 70%;
+
+    .contact-entity {
+      display: flex;
+      align-items: center;
+
+      .profile-link {
+        border-bottom: 2px solid transparent;
+        color: #009688;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          border-bottom: 2px solid #009688 !important;
+        }
+      }
+    }
+
+    .logo-container {
+      border: 1px solid #00acee;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 15px;
+      min-height: 70px;
+      min-width: 70px;
+      padding: 8px;
+      text-align: center;
+  
+      .fa {
+        color: #00acee;
+      }
+    }  
+  }
+}

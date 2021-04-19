@@ -5,6 +5,8 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+window.repoName = '/ap'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

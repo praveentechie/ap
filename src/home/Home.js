@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       <section id='home' className='section home'>
         <div className='card'>
-          <img src='/ap/ap.png' className='avatar' alt='Avatar'/>
+          <img src={`${window.repoName}/ap.png`} className='avatar' alt='Avatar'/>
         </div>
         <div>
           
