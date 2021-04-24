@@ -7,25 +7,18 @@
   }
 
   .skill-type {
-    background-color: $background-light;
+    background-color: $background-default;
+    color: $font-color-dark;
     border-radius: 5px 35px 5px;
-    box-shadow: 0px 0px 10px #adadad;
+    box-shadow: 0px 0px 10px $shadow;
     margin: 30px;
     padding: 10px 20px 20px 20px;
     padding-bottom: 30px;
     transition: all 0.3s ease-in;
 
     &:hover {
-      box-shadow: 0px 0px 30px #adadad;
+      box-shadow: 0px 0px 30px $shadow;
     }
-  }
-
-  .skill-type-title {
-    border-bottom: 1px solid $border-gray-dark;
-    font-size: 1.7rem;
-    font-weight: 300;
-    margin-top: 0;
-    padding: 10px 15px;
   }
 
   .skill-item-container {
@@ -41,9 +34,11 @@
         height: 100px;
         width: 100px;
       }
-  
+
       .skill-item-text {
-        
+        font-size: 1.15rem;
+        font-weight: 400;
+        margin-top: 5px;
       }
     }  
   }

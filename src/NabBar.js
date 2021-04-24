@@ -19,6 +19,10 @@ const NabBar = () => {
           <Link className='nav-menu-text' to='/skills'>Skills</Link>
         </li>
         <li className='nav-menu'>
+          <i className='nav-menu-icon fa fa-graduation-cap' aria-hidden='true'/>
+          <Link className='nav-menu-text' to='/education'>Education</Link>
+        </li>
+        <li className='nav-menu'>
           <i className='nav-menu-icon fa fa-envelope-o' aria-hidden='true'></i>
           <Link className='nav-menu-text' to='/contact'>Contact</Link>
         </li>

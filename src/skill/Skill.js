@@ -1,43 +1,44 @@
 import SkillType from './SkillType';
+import TechSkillModel from './TechSkillModel';
 import './skill.scss';
 
 const feItems = [
-  {name: 'React', imageSrc: `${window.repoName}/assets/img/react.png`},
-  {name: 'Redux', imageSrc: `${window.repoName}/assets/img/redux.png`},
-  {name: 'Vue', imageSrc: `${window.repoName}/assets/img/vue.png`},
-  {name: 'Angular', imageSrc: `${window.repoName}/assets/img/angular.png`},
-  {name: 'Javascript', imageSrc: `${window.repoName}/assets/img/javascript.png`},
-  {name: 'JQuery', imageSrc: `${window.repoName}/assets/img/jquery.png`},
+  new TechSkillModel('React', '/assets/img/react.png', 2016),
+  new TechSkillModel('Redux', '/assets/img/redux.png', 2016),
+  new TechSkillModel('Vue', '/assets/img/vue.png', 2020),
+  new TechSkillModel('Angular', '/assets/img/angular.png', 2019),
+  new TechSkillModel('Javascript', '/assets/img/javascript.png', 2014),
+  new TechSkillModel('JQuery', '/assets/img/jquery.png', 2014)
 ];
 
 const beItems = [
-  {name: 'Node JS', imageSrc: `${window.repoName}/assets/img/nodejs.png`},
-  {name: 'Spring', imageSrc: `${window.repoName}/assets/img/spring.png`},
-  {name: 'Java 8', imageSrc: `${window.repoName}/assets/img/java.png`},
-  {name: 'Maven', imageSrc: `${window.repoName}/assets/img/maven.png`},
-  {name: 'RabbitMQ', imageSrc: `${window.repoName}/assets/img/rabbitmq.png`}
+  new TechSkillModel('Node JS', '/assets/img/nodejs.png', 2017),
+  new TechSkillModel('Spring', '/assets/img/spring.png', 2018),
+  new TechSkillModel('Java 8', '/assets/img/java.png', 2016),
+  new TechSkillModel('Maven', '/assets/img/maven.png', 2018),
+  new TechSkillModel('RabbitMQ', '/assets/img/rabbitmq.png', 2019)
 ];
 
 const dbList = [
-  {name: 'MongoDB', imageSrc: `${window.repoName}/assets/img/mongodb.png`},
-  {name: 'PostgreSQL', imageSrc: `${window.repoName}/assets/img/postgresql.png`}
+  new TechSkillModel('MongoDB', '/assets/img/mongodb.png', 2018),
+  new TechSkillModel('PostgreSQL', '/assets/img/postgresql.png', 2020)
 ];
 
 const htmlList = [
-  {name: 'HTML5', imageSrc: `${window.repoName}/assets/img/html5.png`},
-  {name: 'JSX', imageSrc: `${window.repoName}/assets/img/react.png`}
+  new TechSkillModel('HTML5', '/assets/img/html5.png', 2014),
+  new TechSkillModel('JSX', '/assets/img/react.png', 2016)
 ];
 
 const cssList = [
-  {name: 'CSS3', imageSrc: `${window.repoName}/assets/img/css3.png`},
-  {name: 'SASS', imageSrc: `${window.repoName}/assets/img/sass.png`},
-  {name: 'Bootstrap', imageSrc: `${window.repoName}/assets/img/bootstrap.png`}
+  new TechSkillModel('CSS3', '/assets/img/css3.png', 2014),
+  new TechSkillModel('SASS', '/assets/img/sass.png', 2015),
+  new TechSkillModel('Bootstrap', '/assets/img/bootstrap.png', 2014)
 ];
 
 const otherList = [
-  {name: 'Github', imageSrc: `${window.repoName}/assets/img/github.png`},
-  {name: 'Docker', imageSrc: `${window.repoName}/assets/img/docker.png`},
-  {name: 'PM2', imageSrc: `${window.repoName}/assets/img/pm2.png`}
+  new TechSkillModel('GitHub', '/assets/img/github.png', 2014),
+  new TechSkillModel('Docker', '/assets/img/docker.png', 2018),
+  new TechSkillModel('PM2', '/assets/img/pm2.png', 2018)
 ];
 
 const Skill = () => {

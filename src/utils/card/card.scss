@@ -1,0 +1,28 @@
+@import '../../styles/core.scss';
+
+.card {
+  @include shadow;
+  background-color: $background-default;
+  min-height: 100px;
+  padding: 10px 20px 20px 20px;
+  text-align: left;
+
+  .card-title {
+
+    .main-title {
+      border-bottom: none;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .sub-title {
+      margin-bottom: 5px;
+      padding: 0 15px;
+    }
+  }
+
+  .card-content {
+    margin-top: 15px;
+    padding: 0 15px;
+  }
+}
