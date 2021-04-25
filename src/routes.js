@@ -1,20 +1,22 @@
 import { Route, Switch } from 'react-router-dom';
-import Home from './home/Home';
-import AboutRoute from './about/about.route';
-import SkillRoute from './skill/skill.route';
-import ContactRoute from './contact/contact.route';
-import EducationRoute from './education/education.route';
+import Home from './script/home/Home';
+import SkillRoute from './script/skill/skill.route';
+import ContactRoute from './script/contact/contact.route';
+import EducationRoute from './script/education/education.route';
+import ExperienceRoute from './script/experience/experience.route';
 
-export default () => {
+const AppRoute = () => {
   return (
     <Switch>
       <Route exact path='/'>
         <Home/>
       </Route>
-      {AboutRoute()}
       {SkillRoute()}
+      {ExperienceRoute()}
       {EducationRoute()}
       {ContactRoute()}
     </Switch>
   );
 }
+
+export default AppRoute;

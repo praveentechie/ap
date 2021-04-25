@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Route } from "react-router-dom";
-import Loader from "../utils/Loader";
+import Loader from "../common/Loader";
 
 const EducationRoute = () => {
 

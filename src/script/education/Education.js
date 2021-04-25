@@ -1,4 +1,4 @@
-import Card from "../utils/card/Card";
+import Card from "../common/card/Card";
 import './education.scss';
 
 const Education = () => {

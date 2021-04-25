@@ -1,13 +1,17 @@
+// colors
+$black: #000000;
+$white: #FFFFFF;
+
 // background
 $background: #cea352;
 $background-light: #e3e1d2;
 $background-title: #f2e3b4;
-$background-default: #FFFFFF;
+$background-default: $white;
 
 $shadow: #adadad;
 
 // font
-$font-color-dark: #395442;
+$font-color-dark: #008073;
 $font-color-light: #fefefd;
 $font-subtitle: #ac9377;
 $text-color-blue: #0072B5;

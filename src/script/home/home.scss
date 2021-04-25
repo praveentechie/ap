@@ -1,0 +1,27 @@
+@import '../../_core/styles/core.scss';
+
+.home {
+  background: url('/image/cover_bg.jpg');
+  background-size: cover;
+  padding-bottom: 0!important;
+  height: 100%;
+  width: 100%;
+
+  .cover-overlay {
+    background-color: #333333;
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.contact-card {
+  text-align: center;
+
+  .avatar {
+    border-radius: 50%;
+    border: 5px solid $border-light;
+    height: 200px;
+    width: 200px;
+  }
+}

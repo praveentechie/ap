@@ -1,20 +1,18 @@
 import { HashRouter } from 'react-router-dom';
-import NabBar from './NabBar';
+import NavBar from './script/common/NavBar';
 import AppRoute from './routes';
 import './app.scss';
 
 function App() {
   return (
-    <div className='app'>
-      <HashRouter>
-        <div className='page-container'>
-          <NabBar/>
-          <main className='main'>
-            <AppRoute/>
-          </main>
-        </div>
-      </HashRouter>
-    </div>
+    <HashRouter>
+      <NavBar classes='d-none d-md-block' />
+      <div className='container-fluid page-container'>
+        <main className='main'>
+          <AppRoute/>
+        </main>
+      </div>
+    </HashRouter>
   );
 }
 

@@ -1,27 +1,26 @@
 import { lazy, Suspense } from "react";
 import { Route } from "react-router-dom";
-import Loader from "../utils/Loader";
+import Loader from "../common/Loader";
 
-const AboutRoute = () => {
-
-  const AboutPage = (lazy(() => {
-    return import('../about/About');
+const SkillRoute = () => {
+  const SkillPage = (lazy(() => {
+    return import('./Skill');
   }));
 
   const WithSuspense = () => {
     return (
       <Suspense fallback={<Loader/>}>
-        <AboutPage/>
+        <SkillPage/>
       </Suspense>
     );
   }
 
   return (
-    <Route path="/about">
+    <Route path="/skills">
       <WithSuspense/>
     </Route>
   );
 };
 
-AboutRoute.displayName = 'AboutRoute';
-export default AboutRoute;
+SkillRoute.displayName = 'SkillRoute';
+export default SkillRoute;

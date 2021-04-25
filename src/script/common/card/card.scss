@@ -1,7 +1,7 @@
-@import '../../styles/core.scss';
+@import '../../../_core/styles/core.scss';
 
 .card {
-  @include shadow;
+  @include card;
   background-color: $background-default;
   min-height: 100px;
   padding: 10px 20px 20px 20px;
