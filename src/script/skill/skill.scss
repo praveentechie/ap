@@ -34,7 +34,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      margin-bottom: 15px;
+      margin: 7px 0;
   
       .skill-item-image {
         height: 100px;
@@ -42,9 +42,14 @@
       }
 
       .skill-item-text {
+        color: $font-black;
         font-size: 1.15rem;
         font-weight: 400;
         margin-top: 5px;
+      }
+
+      .skill-item-experience {
+        font-size: 1rem;
       }
     }  
   }

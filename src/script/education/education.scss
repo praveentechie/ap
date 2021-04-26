@@ -1,3 +1,5 @@
+@import '../../_core/styles/core.scss';
+
 #education {
   .container {
     display: flex;
@@ -9,6 +11,10 @@
     .education-card {
       margin: 25px 2%;
       width: 45%;
+
+      .education-detail {
+        color: $font-black;
+      }
     }
   }
 }

@@ -9,19 +9,19 @@ const Education = () => {
       </header>
       <div className='container'>
         <Card classes='education-card' title='Jeppiaar Engineering College' subtitle='Chennai, TN, India'>
-          <ul>
+          <ul className='education-detail'>
             <li>B.Tech in Information Technology</li>
             <li>2010 - 2014</li>
           </ul>
         </Card>
         <Card classes='education-card' title='S.V.V. Hr. Sec. School' subtitle='Erode, TN, India'>
-          <ul>
+          <ul className='education-detail'>
             <li>Higher secondary</li>
             <li>2008 - 2010</li>
           </ul>
         </Card>
         <Card classes='education-card' title='Bishop Ubagarasamy Hr. Sec. School' subtitle='Tirupur, TN, India'>
-          <ul>
+          <ul className='education-detail'>
             <li>SSLC</li>
             <li>2008</li>
           </ul>

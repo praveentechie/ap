@@ -7,11 +7,35 @@
   height: 100%;
   width: 100%;
 
+  .home-container {
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+
   .cover-overlay {
     background-color: #333333;
-    opacity: 0.6;
+    opacity: 0.4;
     height: 100%;
     width: 100%;
+  }
+
+  .cover-content {
+    color: $font-color-light;    
+    margin: 0 auto;
+    left: 5rem;
+    top: 5rem;
+    position: absolute;
+    width: 80%;
+
+    .cover-name {
+      font-size: 3.5rem;
+    }
+
+    .cover-description {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
   }
 }
 

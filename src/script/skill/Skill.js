@@ -5,7 +5,7 @@ import './skill.scss';
 const feItems = [
   new TechSkillModel('React', '/assets/img/react.png', 2016),
   new TechSkillModel('Redux', '/assets/img/redux.png', 2016),
-  new TechSkillModel('Vue', '/assets/img/vue.png', 2020),
+  new TechSkillModel('Vue JS', '/assets/img/vue.png', 2020),
   new TechSkillModel('Angular', '/assets/img/angular.png', 2019),
   new TechSkillModel('Javascript', '/assets/img/javascript.png', 2014),
   new TechSkillModel('JQuery', '/assets/img/jquery.png', 2014)
