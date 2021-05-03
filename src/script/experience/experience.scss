@@ -1,0 +1,35 @@
+@import '../../_core/styles/core.scss';
+
+.experience {
+  .container {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 90%;
+    .card-container {
+      @include card;
+
+      .card-header {
+        display: flex;
+        align-items: baseline;
+        .org-logo {
+          height: 70px;
+        }
+        .designation {
+          align-self: flex-end;
+          color: $font-subtitle;
+          font-size: 1.5rem;
+          margin-left: auto;
+          padding-bottom: 5px;
+        }
+      }
+      .card-content {
+        color: $font-black;
+        padding: 0.75rem 1.5rem;
+
+        .project-name {
+          color: $font-color-dark;
+        }
+      }
+    }
+  }
+}

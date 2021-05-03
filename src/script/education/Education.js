@@ -17,7 +17,7 @@ const Education = () => {
         <Card classes='education-card' title='S.V.V. Hr. Sec. School' subtitle='Erode, TN, India'>
           <ul className='education-detail'>
             <li>Higher secondary</li>
-            <li>2008 - 2010</li>
+            <li>2010</li>
           </ul>
         </Card>
         <Card classes='education-card' title='Bishop Ubagarasamy Hr. Sec. School' subtitle='Tirupur, TN, India'>
