@@ -20,6 +20,7 @@
 @mixin card {
   @include shadow;
   border-radius: 5px 35px 5px;
+  overflow: hidden;
 }
 
 #root {

@@ -1,9 +1,13 @@
 import { Component } from "react";
+import './loader.scss';
 
 class Loader extends Component {
   render() {
     return (
-      "Page is loading..."
+      <div className='spinner'>
+        <span className='ball'></span>
+        <p>LOADING</p>
+      </div>
     );
   }
 }

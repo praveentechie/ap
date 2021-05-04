@@ -3,16 +3,21 @@
 .experience {
   .container {
     margin: 0 auto;
-    padding-top: 30px;
     width: 90%;
     .card-container {
       @include card;
+      background-color: $background-default;
+      margin-bottom: 4rem;
 
       .card-header {
         display: flex;
         align-items: baseline;
         .org-logo {
           height: 70px;
+
+          &.wipro {
+            height: 100px;
+          }
         }
         .designation {
           align-self: flex-end;
@@ -22,13 +27,23 @@
           padding-bottom: 5px;
         }
       }
-      .card-content {
+      .card-body {
         color: $font-black;
         padding: 0.75rem 1.5rem;
 
         .project-name {
           color: $font-color-dark;
         }
+
+        .accomplishments {
+          color: $font-color-dark;
+          font-weight: 300;
+        }
+      }
+
+      .card-footer {
+        font-size: 1rem;
+        text-align: right;
       }
     }
   }

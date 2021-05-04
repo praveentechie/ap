@@ -14,20 +14,28 @@ const NavBar = (props) => {
           </Link>
         </li>
         <li className='nav-menu'>
-          <i className='nav-menu-icon fa fa-laptop' aria-hidden='true'/>
-          <Link className='nav-menu-text' to='/skills'>Skills</Link>
+          <Link className='nav-menu-text' to='/skills'>
+            <i className='nav-menu-icon fa fa-laptop' aria-hidden='true'/>
+            Skills
+          </Link>
         </li>
         <li className='nav-menu'>
-          <i className='nav-menu-icon fa fa-industry' aria-hidden='true'/>
-          <Link className='nav-menu-text' to='/experience'>Experience</Link>
+          <Link className='nav-menu-text' to='/experience'>
+            <i className='nav-menu-icon fa fa-industry' aria-hidden='true'/>
+            Experience
+          </Link>
         </li>
         <li className='nav-menu'>
-          <i className='nav-menu-icon fa fa-graduation-cap' aria-hidden='true'/>
-          <Link className='nav-menu-text' to='/education'>Education</Link>
+          <Link className='nav-menu-text' to='/education'>
+            <i className='nav-menu-icon fa fa-graduation-cap' aria-hidden='true'/>
+            Education
+          </Link>
         </li>
         <li className='nav-menu'>
-          <i className='nav-menu-icon fa fa-envelope-o' aria-hidden='true'></i>
-          <Link className='nav-menu-text' to='/contact'>Contact</Link>
+          <Link className='nav-menu-text' to='/contact'>
+            <i className='nav-menu-icon fa fa-envelope-o' aria-hidden='true'></i>
+            Contact
+          </Link>
         </li>
 
       </ul>

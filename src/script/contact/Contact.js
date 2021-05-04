@@ -8,6 +8,7 @@ const Contact = () => {
         <h1 className='page-header'>Contact</h1>
       </header>
       <div className='container'>
+        <p className='catch-up'>Wanna catch-up? Feel free to contact me.</p>
         <div className='logo-wrapper'>
           <ContactEntity logoClass='fa-github' description='GitHub' link='https://github.com/praveentechie' />
           <ContactEntity logoClass='fa-twitter' description='Twitter' link='https://twitter.com/praveen_ap7' />
