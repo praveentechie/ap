@@ -21,8 +21,20 @@ const NavBar = (props) => {
         </li>
         <li className='nav-menu'>
           <Link className='nav-menu-text' to='/experience'>
-            <i className='nav-menu-icon fa fa-industry' aria-hidden='true'/>
+            <i className='nav-menu-icon fa fa-briefcase' aria-hidden='true'/>
             Experience
+          </Link>
+        </li>
+        <li className='nav-menu'>
+          <Link className='nav-menu-text' to='/project'>
+            <i className='nav-menu-icon fa fa-puzzle-piece' aria-hidden='true'/>
+            Projects
+          </Link>
+        </li>
+        <li className='nav-menu'>
+          <Link className='nav-menu-text' to='/award'>
+            <i className='nav-menu-icon fa fa-trophy' aria-hidden='true'/>
+            Awards
           </Link>
         </li>
         <li className='nav-menu'>
