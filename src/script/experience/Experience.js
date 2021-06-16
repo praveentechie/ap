@@ -28,6 +28,7 @@ const Experience = () => {
               <li>Added multi-language support to the application.</li>
               <li>Reduced batch operations load in BE by 25%.</li>
               <li>Implemented gzip compression mechanism and decreased app load time by 50%.</li>
+              <li>Contributed to architecute improvements like CloudAMQP migration.</li>
             </ul>
           </div>
           <div className='card-footer'>
