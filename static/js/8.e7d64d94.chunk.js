@@ -1,2 +1,0 @@
-(this.webpackJsonpap=this.webpackJsonpap||[]).push([[8],{44:function(e,t,c){"use strict";c.r(t);var i=c(0);t.default=function(){return Object(i.jsxs)("section",{id:"experience",className:"section experience",children:[Object(i.jsx)("header",{children:Object(i.jsx)("h1",{className:"page-header",children:"Projects"})}),Object(i.jsx)("div",{className:"container",children:Object(i.jsx)("div",{style:{fontSize:"5rem",fontWeight:"200",height:"350px",width:"100%",textAlign:"center"},children:"Coming soon..."})})]})}}}]);
-//# sourceMappingURL=8.e7d64d94.chunk.js.map
