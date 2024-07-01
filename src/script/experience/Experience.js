@@ -1,5 +1,64 @@
 import './experience.scss';
 
+const experienceList = [
+  {
+    id: 'Walmart',
+    logoPath: '/assets/img/walmart.png',
+    designation: 'Senior Software Engineer',
+    projectName: 'Digital talent book',
+    projectDesc: 'An intuitive, cloud-based property management solution for resorts and hotels. Keep business flowing effortlessly, on any operating system.',
+    responsibilities: [
+      'Contribute core feature across stack.',
+      'Involve in designing and implementing infrastructure changes.',
+      'Develop frameworks to improve the quality and increase the performance of the product.',
+      'Provide solution for issues related to feature development, dev environment.'
+    ],
+    accomplishments: [
+      'Added multi-language support to the application.',
+      'Reduced batch operations load in BE by 25%.',
+      'Implemented gzip compression mechanism and decreased app load time by 50%.',
+      'Provide solution for issues related to feature development, dev environment.'
+    ],
+    footer: 'Nov 2021 - Present | Chennai, India'
+  }, {
+    id: 'Agilysys',
+    logoPath: '/assets/img/agilysys.png',
+    designation: 'Lead Software Analyst',
+    projectName: 'Agilysys Stay',
+    projectDesc: 'An intuitive, cloud-based property management solution for resorts and hotels. Keep business flowing effortlessly, on any operating system.',
+    responsibilities: [
+      'Contribute core feature across stack.',
+      'Involve in designing and implementing infrastructure changes.',
+      'Develop frameworks to improve the quality and increase the performance of the product.',
+      'Provide solution for issues related to feature development, dev environment.'
+    ],
+    accomplishments: [
+      'Added multi-language support to the application.',
+      'Reduced batch operations load in BE by 25%.',
+      'Implemented gzip compression mechanism and decreased app load time by 50%.',
+      'Provide solution for issues related to feature development, dev environment.'
+    ],
+    footer: 'Feb 2018 - Nov 2021 | Chennai, India'
+  }, {
+    id: 'WIPRO',
+    logoPath: '/assets/img/wipro.png',
+    designation: 'Project Engineer',
+    projectName: 'Brucke Platform - Apple Online Store',
+    projectDesc: 'A platform to define a standard approach for managing life cycle of a product release/maintenance eliminating hurdles of manual processing. The platform helps in configuring the Apple\'s product availability based on region.',
+    responsibilities: [
+      'Convert the mock screen to working application and integrate with service.',
+      'Upgrade/Maintain dependant node packages and third party libraries.',
+      'Support product release and production maintenance activities.'
+    ],
+    accomplishments: [
+      'Implemented MVC framework based on React-Redux / Angular architecture for front-end and NodeJS for server.',
+      'Developed reusable UI components using React and jQuery libraries.',
+      'Conducted KT session on new libraries/frameworks that are introduced in the application.'
+    ],
+    footer: 'Sep 2014 - Dec 2017 | Chennai, India'
+  }
+];
+
 const Experience = () => {
   return (
     <section id='experience' className='section experience'>
@@ -7,63 +66,38 @@ const Experience = () => {
         <h1 className='page-header'>Experience</h1>
       </header>
       <div className='container'>
-        <div className='card-container'>
-          <div className='card-header'>
-            <span>
-              <img className='org-logo' src={`${window.repoName}/assets/img/agilysys.png`} alt='agilysys' />
-            </span>
-            <span className='designation'>Full stack web developer</span>
-          </div>
-          <div className='card-body'>
-            <h3 className='project-name'>Agilysys Stay</h3>
-            <p>An intuitive, cloud-based property management solution for resorts and hotels. Keep business flowing effortlessly, on any operating system.</p>
-            <ul>
-              <li>Contribute core feature across stack.</li>
-              <li>Involve in designing and implementing infrastructure changes.</li>
-              <li>Develop frameworks to improve the quality and increase the performance of the product.</li>
-              <li>Provide solution for issues related to feature development, dev environment.</li>
-            </ul>
-            <h5 className='accomplishments'>ACCOMPLISHMENTS</h5>
-            <ul>
-              <li>Added multi-language support to the application.</li>
-              <li>Reduced batch operations load in BE by 25%.</li>
-              <li>Implemented gzip compression mechanism and decreased app load time by 50%.</li>
-              <li>Contributed to architecute improvements like CloudAMQP migration.</li>
-            </ul>
-          </div>
-          <div className='card-footer'>
-            Feb 2018 - Present | Chennai, India
-          </div>
-        </div>
-        <div className='card-container'>
-          <div className='card-header'>
-            <span>
-              <img className='org-logo wipro' src={`${window.repoName}/assets/img/wipro.png`} alt='agilysys' />
-            </span>
-            <span className='designation'>Front end web developer</span>
-          </div>
-          <div className='card-body'>
-            <h3 className='project-name'>WIPRO Technologies, Brucke Platform - AOS</h3>
-            <p>
-              A platform to define a standard approach for managing life cycle of a product release/maintenance eliminating hurdles of manual processing.
-              The platform helps in configuring the Apple's product availability based on region.
-            </p>
-            <ul>
-              <li>Convert the mock screen to working application and integrate with service.</li>
-              <li>Upgrade/Maintain dependant node packages and third party libraries.</li>
-              <li>Support product release and production maintenance activities.</li>
-            </ul>
-            <h5 className='accomplishments'>ACCOMPLISHMENTS</h5>
-            <ul>
-              <li>Implemented MVC framework based on React-Redux / Angular architecture for front-end and NodeJS for server.</li>
-              <li>Developed reusable UI components using React and jQuery libraries.</li>
-              <li>Conducted KT session on new libraries/frameworks that are introduced in the application.</li>
-            </ul>
-          </div>
-          <div className='card-footer'>
-            Sep 2014 - Dec 2017 | Chennai, India
-          </div>
-        </div>
+        {
+          experienceList.map(experience => (
+            <div className='card-container' key={experience.id}>
+              <div className='card-header'>
+                <span>
+                  <img className='org-logo' src={`${window.repoName}${experience.logoPath}`} alt={experience.id} />
+                </span>
+                <span className='designation'>{experience.designation}</span>
+              </div>
+              <div className='card-body'>
+                <h3 className='project-name'>{experience.projectName}</h3>
+                <p>{experience.projectDesc}</p>
+                <ul>
+                  {
+                    experience.responsibilities.map(responsibility => (
+                      <li key={responsibility}>{responsibility}</li>
+                    ))
+                  }
+                </ul>
+                <h5 className='accomplishments'>ACCOMPLISHMENTS</h5>
+                <ul>
+                  {
+                    experience.accomplishments.map(accomplishment => (
+                      <li key={accomplishment}>{accomplishment}</li>
+                    ))
+                  }
+                </ul>
+              </div>
+              <div className='card-footer'>{experience.footer}</div>
+            </div>
+          ))
+        }
       </div>
     </section>
   );
